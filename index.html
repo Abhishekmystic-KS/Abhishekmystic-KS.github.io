@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Abhishek KS — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&family=Press+Start+2P&family=Cormorant+Garamond:wght@400;500;600;700&family=JetBrains+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<nav>
+  <div class="logo">ABHISHEK<span>.KS</span></div>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Work</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#hackathons">Hackathons</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===== ENERGY SPINE ===== -->
+<aside class="energy-spine" aria-hidden="true">
+  <div class="rail"></div>
+  <div class="pulse"></div>
+  <div class="pulse p2"></div>
+  <div class="pulse p3"></div>
+</aside>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div class="hero-left">
+    <span class="tag">// AI / ML Engineer</span>
+    <h1>Abhishek <span class="amp">&amp;</span><br/>the Singularity.</h1>
+    <div class="subtitle">> building@ai_systems<span class="cursor"></span></div>
+    <p class="intro">
+      I build practical AI — computer vision pipelines, voice assistants,
+      and LLM-powered tools. Currently exploring the event horizon of
+      generative models &amp; retrieval systems.
+    </p>
+    <div class="cta-row">
+      <a href="#projects" class="btn btn-primary">View Work</a>
+      <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <canvas id="blackhole" width="120" height="120"></canvas>
+    <div class="bh-coords">
+      RA: 17h45m40s<br/>
+      DEC: -29°00'28"<br/>
+      EVENT::HORIZON
+    </div>
+    <div class="bh-label">SGR A* — PIXEL DRIFT</div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section id="about" class="reveal">
+  <div class="section-head">
+    <span class="num">01</span>
+    <h2>About <em>me</em></h2>
+  </div>
+  <div class="about-grid">
+    <div class="about-text">
+      <p>
+        I'm a Bachelor of Computer Applications student at Community Institute of
+        Commerce and Management Studies, Bangalore — but most days you'll find me
+        elbow-deep in Python notebooks, training transformers, or wiring up
+        retrieval-augmented voice agents.
+      </p>
+      <p>
+        My focus sits at the intersection of <em>computer vision</em>,
+        <em>generative AI</em>, and full-stack ML deployment. I love systems that
+        actually ship — where a model meets an interface and a user pushes a button.
+      </p>
+      <p>
+        When I'm not training models, I'm tinkering with Linux internals,
+        cybersecurity tools, and the occasional cosmic visualization.
+      </p>
+    </div>
+    <div class="about-card">
+      <div class="stat-row"><span>location</span><span>Bangalore, IN</span></div>
+      <div class="stat-row"><span>education</span><span>BCA, 2023–Present</span></div>
+      <div class="stat-row"><span>cgpa</span><span>7.76</span></div>
+      <div class="stat-row"><span>role</span><span>AI R&amp;D Intern</span></div>
+      <div class="stat-row"><span>focus</span><span>CV · LLM · RAG</span></div>
+      <div class="stat-row"><span>status</span><span style="color: var(--accent);">● available</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section id="experience" class="reveal">
+  <div class="section-head">
+    <span class="num">02</span>
+    <h2>Where I've <em>worked</em></h2>
+  </div>
+  <div class="exp-card">
+    <div class="exp-header">
+      <h3>Ai4sees Private Ltd</h3>
+      <span class="duration">JAN 2026 — MAY 2026</span>
+    </div>
+    <div class="exp-role">AI RESEARCH &amp; DEVELOPMENT INTERN</div>
+    <ul>
+      <li>Developed an <strong>Unsupervised Anomaly Detection Framework</strong> using a
+        Transformer-based Teacher–Student architecture, leveraging knowledge
+        distillation to identify structural and logical deviations in visual data.</li>
+      <li>Trained and fine-tuned <strong>ResNet50</strong> backbones on custom-curated
+        datasets, achieving high classification accuracy by optimizing feature
+        extraction layers.</li>
+      <li>Evaluated and benchmarked state-of-the-art models including <strong>GLACE</strong> and
+        <strong>EndoSLAM</strong> via GitHub integrated testing environments, identifying
+        performance bottlenecks in endoscopic &amp; medical imaging sequences.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section id="projects" class="reveal">
+  <div class="section-head">
+    <span class="num">03</span>
+    <h2>Selected <em>projects</em></h2>
+  </div>
+  <div class="projects-grid">
+
+    <div class="proj-card">
+      <div class="proj-num">PROJ_01</div>
+      <h3>AI-Powered Image Restoration &amp; Enhancement</h3>
+      <p>
+        End-to-end image restoration app built on the ESRGAN architecture —
+        upscales and recovers fine textures in low-resolution images. Async
+        resource caching for snappy real-time inference.
+      </p>
+      <div class="tech-stack">
+        <span>ESRGAN</span><span>Streamlit</span><span>TensorFlow Hub</span><span>Python</span>
+      </div>
+      <a href="https://github.com/Abhishekmystic-KS/ai-image-restoration" class="proj-link" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+
+    <div class="proj-card">
+      <div class="proj-num">PROJ_02</div>
+      <h3>Friday — J.A.R.V.I.S Voice AI Assistant</h3>
+      <p>
+        Full voice pipeline: WebRTC VAD → Groq Whisper transcription → Groq LLaMA
+        3.1-8b streaming inference. RAG-backed knowledge base with semantic retrieval
+        and a 3-tier web search fallback.
+      </p>
+      <div class="tech-stack">
+        <span>Groq Whisper</span><span>edge-tts</span><span>ChromaDB</span><span>LangChain</span><span>RAG</span>
+      </div>
+      <a href="https://github.com/Abhishekmystic-KS/Friday-J.A.R.V.I.S-" class="proj-link" target="_blank" rel="noopener noreferrer">View Project</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== SKILLS ===== -->
+<section id="skills" class="reveal">
+  <div class="section-head">
+    <span class="num">04</span>
+    <h2>Tools of the <em>trade</em></h2>
+  </div>
+
+  <div class="skills-stage">
+    <canvas id="orbits" width="1200" height="900" aria-hidden="true"></canvas>
+
+    <div class="skills-wrap">
+      <div class="skill-group" data-body="planet-rocky">
+        <span class="skill-badge" title="Rocky planet">●</span>
+        <h4>Languages</h4>
+        <div class="skill-list">
+          <span>Python</span><span>Java</span><span>C</span>
+        </div>
+      </div>
+      <div class="skill-group" data-body="gas-giant">
+        <span class="skill-badge spin" title="Gas giant">◉</span>
+        <h4>ML / AI Frameworks</h4>
+        <div class="skill-list">
+          <span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span>
+          <span>OpenAI GPT</span><span>LangChain</span><span>MCP</span>
+        </div>
+      </div>
+      <div class="skill-group" data-body="ringed">
+        <span class="skill-badge ring" title="Ringed planet">◎</span>
+        <h4>Web &amp; Backend</h4>
+        <div class="skill-list">
+          <span>FastAPI</span><span>Streamlit</span><span>Flask</span><span>React</span>
+        </div>
+      </div>
+      <div class="skill-group" data-body="ice">
+        <span class="skill-badge" title="Ice planet">○</span>
+        <h4>Data &amp; Viz</h4>
+        <div class="skill-list">
+          <span>matplotlib</span><span>seaborn</span><span>ChromaDB</span><span>OpenCV</span>
+        </div>
+      </div>
+      <div class="skill-group" data-body="claude">
+        <span class="skill-badge spin" title="Claude CLI satellite">✦</span>
+        <h4>Dev Tools</h4>
+        <div class="skill-list">
+          <span>Git</span><span>GitHub</span><span>Docker</span><span>VS Code</span>
+          <span>Jupyter</span><span>HuggingFace</span><span>Claude&nbsp;CLI</span>
+        </div>
+      </div>
+      <div class="skill-group" data-body="neutron">
+        <span class="skill-badge pulsar" title="Neutron star (pulsar)">✺</span>
+        <h4>Specialization</h4>
+        <div class="skill-list">
+          <span>Machine Learning</span><span>Deep Learning</span><span>Generative AI</span>
+          <span>NLP</span><span>Prompt Engineering</span><span>LLM</span><span>RAG</span>
+        </div>
+      </div>
+      <div class="skill-group" data-body="comet">
+        <span class="skill-badge" title="Comet">☄</span>
+        <h4>Other</h4>
+        <div class="skill-list">
+          <span>Cybersecurity</span><span>Linux</span><span>Virtual Machines</span><span>n8n</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="orbit-legend">
+      <span class="item"><span class="glyph">●</span> rocky</span>
+      <span class="item"><span class="glyph">◉</span> gas&nbsp;giant</span>
+      <span class="item"><span class="glyph">◎</span> ringed</span>
+      <span class="item"><span class="glyph">○</span> ice</span>
+      <span class="item"><span class="glyph">✦</span> claude&nbsp;cli&nbsp;sat.</span>
+      <span class="item"><span class="glyph">✺</span> neutron&nbsp;star</span>
+      <span class="item"><span class="glyph">☄</span> comet</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== HACKATHONS ===== -->
+<section id="hackathons" class="reveal">
+  <div class="section-head">
+    <span class="num">05</span>
+    <h2>Hackathons &amp; <em>build sprints</em></h2>
+  </div>
+  <div class="cert-grid">
+    <div class="cert-card">
+      <h4>Bharatiya Antariksh Hackathon 2025 — ISRO</h4>
+      <p><strong>Lunar DEM</strong> — generating high-resolution Lunar Digital
+         Elevation Models from satellite imagery: lunar imagery processing,
+         photogrammetry, and elevation reconstruction.</p>
+      <div class="tech-stack">
+        <span>OpenCV</span><span>Python</span><span>Photogrammetry</span>
+      </div>
+    </div>
+    <div class="cert-card">
+      <h4>NMIT HACKS 2025 — NMIT</h4>
+      <p><strong>Unified Chain ID</strong> — framework for a single verifiable
+         identity across applications: data linking, secure authentication,
+         and workflow interoperability using modern backend &amp; API patterns.</p>
+      <div class="tech-stack">
+        <span>FastAPI</span><span>Auth</span><span>Backend</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="contact" class="contact-section reveal">
+  <div class="section-head" style="justify-content:center; border:none;">
+    <span class="num">06</span>
+    <h2 style="font-size: 52px;">Let's <em>build</em> something.</h2>
+  </div>
+  <p>
+    Always open to interesting AI/ML conversations, internships, collaborations,
+    or just a good chat about the latest paper.
+  </p>
+  <div class="contact-links">
+    <a href="mailto:abhi2005aku@gmail.com">✉ abhi2005aku@gmail.com</a>
+    <a href="tel:+918310879483">☎ +91 8310879483</a>
+    <a href="https://www.linkedin.com/in/abhishekks5" target="_blank" rel="noopener noreferrer">⌬ LinkedIn</a>
+    <a href="https://github.com/Abhishekmystic-KS" target="_blank" rel="noopener noreferrer">⌗ GitHub</a>
+  </div>
+</section>
+
+<footer>
+  CRAFTED WITH ☕ &amp; CURIOSITY · ABHISHEK KS · MMXXVI
+</footer>
+
+<script defer src="js/main.js"></script>
+
+</body>
+</html>
