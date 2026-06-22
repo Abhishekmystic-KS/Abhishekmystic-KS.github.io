@@ -421,8 +421,14 @@
     margin: 18px 0 20px;
     border: 1px solid var(--cream-3);
     background: var(--cream-0);
-    aspect-ratio: 16 / 9;
     overflow: hidden;
+  }
+  .proj-demo {
+    width: min(100%, 280px);
+    aspect-ratio: 16 / 9;
+  }
+  .proj-screenshot {
+    aspect-ratio: 16 / 9;
   }
   .proj-media img,
   .proj-media video {
