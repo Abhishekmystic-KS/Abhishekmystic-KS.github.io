@@ -285,14 +285,14 @@
     position: relative;
   }
   .about-photo-card {
-    height: 270px;
+    aspect-ratio: 360 / 377;
     overflow: hidden;
   }
   .about-photo-card img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   /* ===== EXPERIENCE ===== */
