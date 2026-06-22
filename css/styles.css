@@ -374,7 +374,7 @@
   /* ===== PROJECTS ===== */
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 380px), 1fr));
     gap: 32px;
   }
   .proj-card {
@@ -417,6 +417,24 @@
     margin-bottom: 20px;
     font-size: 17px;
   }
+  .proj-media {
+    margin: 18px 0 20px;
+    border: 1px solid var(--cream-3);
+    background: var(--cream-0);
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  .proj-media img,
+  .proj-media video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .proj-media video,
+  .proj-media img {
+    background: #0a0603;
+  }
   .tech-stack {
     display: flex;
     flex-wrap: wrap;
@@ -448,6 +466,13 @@
     border-color: var(--ink);
   }
   .proj-link::after { content: " →"; }
+  .proj-note {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 11px;
+    color: var(--ink-soft);
+    padding-top: 2px;
+    letter-spacing: 0.4px;
+  }
 
   /* ===== SKILLS ===== */
   .skills-stage {
