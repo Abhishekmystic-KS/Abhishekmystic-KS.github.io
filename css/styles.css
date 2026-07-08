@@ -1,4 +1,6 @@
   :root {
+    --page-bg: #232325;
+    --page-text: #f4efdb;
     --cream-0: #FAF3E3;
     --cream-1: #F2E4C9;
     --cream-2: #E6D3A8;
@@ -16,8 +18,8 @@
   html { scroll-behavior: smooth; }
 
   body {
-    background: var(--cream-0);
-    color: var(--ink);
+    background: var(--page-bg);
+    color: var(--page-text);
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 18px;
     line-height: 1.65;
@@ -48,10 +50,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(250, 243, 227, 0.78);
+    background: rgba(35, 35, 37, 0.82);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(139, 106, 63, 0.15);
+    border-bottom: 1px solid rgba(244, 239, 219, 0.2);
   }
   .logo {
     font-family: 'Press Start 2P', monospace;
@@ -692,6 +694,23 @@
     letter-spacing: 2px;
     border-top: 1px solid rgba(139, 106, 63, 0.15);
     opacity: 0.7;
+  }
+
+  /* text shown directly on page background */
+  .logo,
+  nav ul a,
+  .hero-left h1,
+  .hero-left .subtitle,
+  .hero-left p.intro,
+  .bh-label,
+  .bh-coords,
+  .section-head h2,
+  .about-text p,
+  .contact-section h2,
+  .contact-section p,
+  .contact-links a,
+  footer {
+    color: var(--page-text);
   }
 
   /* ===== SCROLL FADE-IN ===== */
