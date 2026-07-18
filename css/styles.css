@@ -1,16 +1,16 @@
   :root {
     --page-bg: #232325;
     --page-text: #f4efdb;
-    --cream-0: #FAF3E3;
-    --cream-1: #F2E4C9;
-    --cream-2: #E6D3A8;
-    --cream-3: #D4B98C;
+    --cream-0: #232325;         /* page background */
+    --cream-1: #2c2c2f;         /* card surface */
+    --cream-2: #37373b;         /* raised / hover surface */
+    --cream-3: #45454a;         /* borders */
     --sepia:   #8B6A3F;
-    --ink:     #3A2A18;
-    --ink-soft:#5C4530;
-    --accent:  #B8864B;
+    --ink:     #f3eeda;         /* main text */
+    --ink-soft:#c9c0a6;         /* secondary text */
+    --accent:  #B8864B;         /* light brown accent */
     --glow:    #E9C97A;
-    --shadow:  rgba(58, 42, 24, 0.18);
+    --shadow:  rgba(0, 0, 0, 0.4);
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -44,16 +44,21 @@
   /* ===== NAV ===== */
   nav {
     position: fixed;
-    top: 0; left: 0; right: 0;
+    top: 16px;
+    left: 24px; right: 24px;
     z-index: 100;
-    padding: 20px 48px;
+    padding: 14px 32px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(35, 35, 37, 0.82);
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
-    border-bottom: 1px solid rgba(244, 239, 219, 0.2);
+    border-radius: 22px;
+    background: rgba(45, 45, 48, 0.55);
+    backdrop-filter: blur(18px) saturate(180%);
+    -webkit-backdrop-filter: blur(18px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.18),
+      0 8px 32px rgba(0, 0, 0, 0.45);
   }
   .logo {
     font-family: 'Press Start 2P', monospace;
@@ -110,7 +115,7 @@
     display: inline-block;
     padding: 6px 14px;
     border: 1px solid var(--cream-3);
-    background: rgba(242, 228, 201, 0.4);
+    background: rgba(55, 55, 59, 0.5);
   }
   .hero-left h1 {
     font-family: 'Cormorant Garamond', serif;
@@ -412,7 +417,7 @@
     overflow: hidden;
   }
   .proj-demo {
-    width: min(100%, 280px);
+    width: min(100%, 360px);
     aspect-ratio: 16 / 9;
   }
   .proj-screenshot {
@@ -492,7 +497,7 @@
     gap: 32px;
   }
   .skill-group {
-    background: rgba(242, 228, 201, 0.82);
+    background: rgba(44, 44, 47, 0.82);
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px);
     border: 1px solid var(--cream-3);
